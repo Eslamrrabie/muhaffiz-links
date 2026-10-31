@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>وِرد — دعوة</title>
+<title>مُحفِّظ — دعوة</title>
 <style>
   body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:#0b1511;color:#faf6ec;
        min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
@@ -18,7 +18,7 @@
 </head>
 <body>
 <div class="card">
-  <h1>وِرد</h1>
+  <h1>مُحفِّظ</h1>
   <p id="msg">تمت دعوتك للانضمام. افتح التطبيق وسجّل دخولك، وستدخل مباشرة.</p>
   <a class="btn open" id="open" href="#">افتح في التطبيق</a>
   <a class="btn store" id="store" href="https://play.google.com/store/apps/details?id=com.islamfawzy.werd">تثبيت التطبيق</a>
@@ -32,7 +32,7 @@
   if (!code) document.getElementById('msg').textContent = 'رابط الدعوة غير مكتمل. اطلب رابطاً جديداً.';
   if (/android/i.test(navigator.userAgent) && code) { setTimeout(function(){ location.href = intent; }, 500); }
   else if (!/android/i.test(navigator.userAgent)) {
-    document.getElementById('msg').textContent = 'افتح هذا الرابط من هاتف أندرويد عليه تطبيق وِرد.';
+    document.getElementById('msg').textContent = 'افتح هذا الرابط من هاتف أندرويد عليه تطبيق مُحفِّظ.';
   }
 </script>
 </body>
